@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>BEM VINDO A CALCULADORA BÁSICA</h1>
+
+<script>
+
+	var nome = prompt("Digite seu nome");
+	var operacao = parseInt(prompt("Digite o numero da operação desejada \n 1 para adição \n 2 para subtração \n 3 para multiplicação \n 4 para divisão"));
+	var numero1 = parseInt(prompt("Digite o primeiro numero"));
+	var numero2 = parseInt(prompt("Digite o segundo numero"));
+
+	var TotalSoma = numero1 + numero2;
+	var TotalSubtração = numero1 - numero2;
+	var TotalMultiplicacao = numero1 * numero2;
+	var TotalDivisão = numero1 / numero2;
+
+	if (operacao == 1){
+		
+		document.write(nome + ", O valor da soma é: " + TotalSoma);
+
+	}
+
+	if (operacao == 2){
+
+		document.write(nome + ", O valor da subtração é: " + TotalSubtração);
+
+	}
+
+	if (operacao == 3){
+
+		document.write(nome + ", O valor da multiplicação é: " + TotalMultiplicacao);
+
+	}
+
+	if (operacao == 4){
+
+		document.write(nome + ", O valor da divisão é: " + TotalDivisão);
+
+	}
+	
+</script>
